@@ -1,0 +1,597 @@
+/* Body and font styling */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Container styling */
+.container {
+  position: relative; /* Needed for absolute positioning of the image */
+  padding: 20px;
+}
+
+/* Navbar styling */
+nav {
+  padding: 20px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  height: 37px;
+  align-items: center;
+  color: rgb(189, 144, 107);
+  background-color: #fefbea;
+  font-family:quicksand;
+}
+
+.fname{
+  font-size: 30px;
+  margin-top: -1px;
+}
+
+.lname{
+  margin-top: 50px;
+  font-size: 30px;
+  margin-left: -16px;
+}
+
+.navbar-links {
+  display: flex;
+  font-weight: 700;
+  gap: 20px;
+  color: darkkhaki;
+  font-size: larger;
+  font-family:quicksand;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.nav-link {
+  font-size: 25px;
+  color: #555; /* Default link color */
+  text-decoration: none;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff; /* Color for active link */
+}
+
+.nav-link {
+  font-size: 20px;
+  color: #555;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%; /* Initially, the line has no width */
+  height: 2px;
+  background-color: rgb(189, 144, 107);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Full width of the link */
+}
+
+.md\:text-6xl {
+  font-size: 4rem;
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: GREEN;
+}
+
+h1 {
+  margin-left: 70px;
+}
+
+p {
+  width: 500px;
+  margin-left: 70px;
+  font-size: 1.25rem;
+  color: grey;
+  margin-bottom: 70px;
+}
+
+.button {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  color: var(--text-background, #fff);
+  background-color: var(--primary, green);
+  transition: background-color 0.3s, color 0.3s;
+  width: 90px;
+  margin-left: 70px;
+  margin-bottom: 100px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--border, #0B6623);
+  color: var(--primary, YELLOW);
+  text-decoration: none;
+}
+
+.button + .button {
+  margin-left: 55px;
+}
+
+/* Image container styling */
+.image-container {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  transform: translateY(-80%); /* Center the image vertically */
+  width: auto; /* Allow image container width to adjust */
+  max-width: 500px; /* Maximum width for the image container */
+  height: auto; /* Maintain aspect ratio */
+  padding: 10px; /* Optional padding */
+  margin-top: -16%;
+  
+
+}
+
+.happyteam {
+  width: 500px; /* Make the image responsive */
+  height: 450px; /* Maintain the aspect ratio of the image */
+  border-radius:.375rem;
+  margin-top: 1075px;
+ 
+}
+
+.text-border{
+  color:black;
+  --tw-text-opacity:1;
+  }
+
+  .heading2{
+   margin-top: 7%;
+    font-size: 3rem;
+    text-align: center;
+    margin-left: -525px;
+  }
+
+  .plugh{
+    text-decoration: solid;
+    font-size: 1.5rem;
+    margin-top:5%;
+    margin-left: 150px;
+  }
+  .plugh1{
+    text-decoration: solid;
+    font-size: 2rem;
+    margin-top:15%;
+    margin-left: 700px;
+    margin-top: 5%;
+  }
+  .plug1{
+    color: rgb(61, 62, 65);
+    font-size:large;
+    margin-left: 150px;
+  }
+  .plug2{
+    color: rgb(61, 62, 65);
+    font-size:large;
+    margin-left: 700px;
+   
+  }
+
+  .product1 {
+    width: 40%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin-left: 60%;
+    margin-top: -60%;
+   
+  }
+  .product2 {
+    width: 25%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin-left: 70px; 
+    margin-top: -50%;
+   
+  }
+
+  .skimg{
+    width:25px;
+  }
+  .latestpara{
+   margin-left: 300px;
+   width:50%;
+    text-align: justify;
+    font-size: 1rem;
+    color: rgb(97, 96, 96);
+    margin-top: 0%;
+  }
+  
+
+  .latest{
+    color: rgb(236, 71, 85);
+    letter-spacing:.025em;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0%;
+  }
+  .latest1{
+    color: rgb(236, 71, 85);
+    letter-spacing:.025em;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0%;
+    margin-left: -10%;
+  }
+  .latesth{
+   
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  .reactimg{
+  
+    width:1.5rem;
+   align-items: center;
+   margin-top: 8px;
+   margin-left: 8px;
+  }
+  .reactimgborder{
+    border-radius:20000px;
+    border-style:solid;
+    border-radius:.375rem;
+    border-color: rgb(236, 71, 85);
+    border-width: 4px;
+    margin-left: 50px;
+    width: 40px;
+    height: 40px;
+    
+  }
+
+  .react{
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    margin-left: 110px;
+  }
+  .reactpara{
+    color: rgb(61, 62, 65);
+    font-size: large;
+    margin-top: -60px;
+    margin-left: 110px;
+  }
+  .Tailwindimg{
+  
+    width:1.5rem;
+   align-items: center;
+   margin-top: 12px;
+   margin-left: 8px;
+  }
+  .Tailwindimgborder{
+    border-radius:20000px;
+    border-style:solid;
+    border-radius:.375rem;
+    border-color: rgb(236, 71, 85);
+    border-width: 4px;
+    margin-left: 700px;
+    width: 40px;
+    height: 40px;
+    margin-top: -152px;
+    
+    
+  }
+
+  .Tailwind{
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    margin-left: 760px;
+  }
+  .Tailwindpara{
+    color: rgb(61, 62, 65);
+    font-size: large;
+    margin-top: -60px;
+    margin-left: 760px;
+  }
+  .Typescriptimg{
+  
+    width:1.5rem;
+   align-items: center;
+   margin-top: 9px;
+   margin-left: 8px;
+  }
+  
+  /* Styling for the about-container */
+.about-container {
+  background-color: #f9f9f9; /* Light background color */
+  border: 1px solid #ddd; /* Border around the container */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding around the content */
+  max-width: 600px; /* Set a max-width for the container */
+  margin: 20px auto; /* Center the container horizontally */
+  box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.1); /* Soft shadow */
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Style the heading */
+.about-container h3 {
+  color: #333; /* Dark color for the heading */
+  font-size: 24px; /* Font size for the heading */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+/* Styling for the list */
+.about-container ul {
+  list-style-type: none; /* Remove default list bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Style for each list item */
+.about-container ul li {
+  margin-bottom: 10px; /* Add space between each list item */
+  font-size: 16px; /* Set font size for list items */
+  color: #555; /* Light gray color for the text */
+}
+
+/* Styling for links (email and LinkedIn) */
+.about-container a {
+  color: #1a73e8; /* Blue color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.about-container a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Optional: Style the phone number and email for better readability */
+.about-container li:nth-child(1),
+.about-container li:nth-child(2) {
+  font-weight: bold; /* Make phone and email text bold */
+}
+
+.footer1{
+  height: 25px;
+}
+
+/* Footer Container */
+.footer-container {
+  background-color: #333; /* Dark background for footer */
+  color: #fff; /* White text color */
+  padding: 20px; /* Padding around the footer */
+  text-align: center; /* Center-align content */
+  margin-bottom: -200px;
+  /* margin-top: 250px; */
+}
+
+
+.foot{
+  margin-bottom: 125px;
+}
+/* Social Icons Styling */
+.social-icons {
+  margin-bottom: 5px; /* Space below the icons */
+  margin-top: -15px;
+}
+
+.social-icons a {
+  color: #fff; /* White color for icons */
+  font-size: 24px; /* Icon size */
+  margin: 0 15px; /* Space between the icons */
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+.social-icons a:hover {
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+/* Footer Text Styling */
+footer p {
+  font-size: 14px; /* Smaller text for footer */
+  color: #ccc; /* Lighter text color */
+  margin-top: 10px; /* Add space above the copyright text */
+}
+
+/* Icons from Font Awesome */
+.fab, .fas {
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.social-icons a:hover .fab, .social-icons a:hover .fas {
+  color: #1a73e8; /* Change color on hover (blue for the icons) */
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  /* Make the text sizes smaller and center align content for smaller screens */
+  h1 {
+    font-size: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .heading2{
+   
+     font-size: 2rem;
+     text-align: center;
+   }
+
+  p {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .button {
+    width: auto;
+    margin-left: 0;
+    padding: 1rem;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .button + .button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  /* Adjust navbar for smaller screens */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; 
+    margin-top: 10px;
+  }
+
+  .navbar-links .nav-link {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .image-container {
+    position:static; /* Allow image to flow with the content on small screens */
+    max-width: 90%; /* Reduce image size on smaller screens */
+    margin-top: 400px; /* Add space between content and image */
+    text-align: center; /* Center align image */
+  }
+
+  
+ 
+}
+
+/* Larger Screens (Tablet and Above) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    width: 80%;
+  }
+
+  .button {
+    width: auto;
+    margin-left: 10px;
+  }
+
+  .button + .button {
+    margin-top: 10px;
+  }
+
+  .image-container {
+    max-width: 45%; /* Image takes up less space on medium screens */
+    margin-top: 70%;
+    text-align: center;
+  }
+  
+}
+
+@media (min-width: 1025px) {
+  .button {
+    width: 150px;
+  }
+
+  .container-fluid {
+    width: 80%; /* Increase container width for large screens */
+    margin: 0 auto;
+  }
+
+  .image-container {
+    max-width: 500px; /* Maintain fixed size for the image */
+    
+  }
+ 
+}
+
+
+.project{
+  margin-left: 190px;
+  margin-top: -387px;
+  margin-bottom: 260Fpx;
+}
+
+
+.skill{
+  margin-bottom: 150px;
+}
+
+.cent{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.copy{
+  margin-left: 955px !important;
+  margin-bottom: -10px;
+}
+
+.sk{
+  margin-bottom: 100px;
+}
+
+.git{
+  width:30px;
+}
+
+.resume{
+  width: 30px;
+}
+
+.x{
+  width: 30px;
+}
+
+.sign{
+  margin-top: -250px;
+  margin-left: -1000px;
+}
+
+.email-input input{
+  height: 35px;
+}
